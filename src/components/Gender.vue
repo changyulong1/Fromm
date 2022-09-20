@@ -9,7 +9,6 @@
             :columns="columns"
             @confirm="onConfirm"
             @cancel="onCancel"
-            @change="onChange"
         />
       </van-popup>
     </div>
@@ -33,7 +32,6 @@ export default {
       this.show = true;
     },
     onConfirm(value){
-      console.log(value)
       this.value = value
       this.show = false
     },
@@ -41,10 +39,7 @@ export default {
       this.show = false;
 
     },
-    onChange(value){
-      console.log(value)
-      console.log(888)
-    }}
+  }
 };
 </script>
 

@@ -80,8 +80,8 @@ div{
         top: 40px;
         width: 100%;
         padding: 4px 0;
-        border-top: 1px solid #000000;
-        border-bottom: 1px solid #000000;
+        border-top: 1px solid #c2c2c2;
+        border-bottom: 1px solid #c2c2c2;
         span{
           flex: 1;
           text-align: center;
@@ -92,26 +92,41 @@ div{
         background: #ffffff;
         .van-picker__cancel{
           background: #ffffff;
+          border: 1px solid #c2c2c2;
+          border-radius: 4px;
         }
         .van-picker__confirm{
           background-color: #0677f9;
           color: #ffffff;
+          border-radius: 4px;
         }
       }
     }
   }
 }
 
-.van-picker-column{
-  background: #ccc;
-  .van-picker-column__wrapper{
-    background: #ccc;
+
+.van-picker__columns{
+  .van-picker__mask{
+    background-image:none;
   }
-}
-.van-picker__frame{
-  //left: 0;
-  //right: 0;
-  //border-top: 1px solid #dadada;
-  //border-bottom: 1px solid #dadada;
+  .van-picker-column{
+    background: #ccc;
+    .van-picker-column__wrapper{
+      background: #ccc;
+      .van-picker-column__item{
+        color: #8f8f8f;
+        &.van-picker-column__item--selected{
+          color:#000000;
+        }
+      }
+    }
+  }
+  .van-picker__frame{
+    left: 0;
+    right: 0;
+    border-top:1px solid #c2c2c2;
+    border-bottom:1px solid #c2c2c2;
+  }
 }
 </style>
