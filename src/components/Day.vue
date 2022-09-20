@@ -21,6 +21,7 @@
 </template>
 
 <script lang="ts">
+import dayjs from 'dayjs'
 export default {
   name: "Day",
   props:['text','show1'],
@@ -38,8 +39,9 @@ export default {
     showPopup() {
       this.show = true;
     },
-    onConfirm() {
+    onConfirm(value) {
       this.show = false;
+      this.value = dayjs(value).format('YYYY年MM月DD日')
     },
     onCancel() {
       this.show = false;

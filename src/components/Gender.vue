@@ -2,7 +2,7 @@
   <div>
     <p><span v-if="show1">*</span>{{text }}</p>
     <div class="select">
-      <van-cell  @click="showPopup">{{ value || '选择器' }}<van-icon name="arrow-down" /></van-cell>
+      <van-cell  @click="showPopup">{{ value || '选择器' }}<van-icon v-if="!value" name="arrow-down" /></van-cell>
       <van-popup  position="bottom" v-model="show">
         <van-picker
             show-toolbar
