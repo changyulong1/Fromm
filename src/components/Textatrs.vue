@@ -25,7 +25,7 @@ div{
     width: 100%;
     border: none;
     padding: 16px 0;
-    border-bottom: 1px solid rgb(11, 11, 11);
+    border-bottom: 1px solid #ccc;
   }
 }
 

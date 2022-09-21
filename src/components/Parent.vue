@@ -1,9 +1,6 @@
 <template>
   <div class="warp">
-    <div class="title">
-      <p>杭州大连丝绸有限公司</p>
-      <p>应聘登记表</p>
-    </div>
+    <Header></Header>
     <form action="#" method="get">
       <ul>
         <li><Option :show="true" text="应聘职位"/></li>
@@ -91,9 +88,11 @@ import Day from "../components/Day.vue"
 import Gender from "../components/Gender";
 import Chart from "../components/Chart";
 import Textatrs from '../components/Textatrs'
+import Header from "@/components/Header";
 export default {
   name: 'HelloWorld',
   components:{
+    Header,
     Chart,
     Gender,
     Option,
@@ -113,15 +112,6 @@ export default {
   display: flex;
   flex-direction: column;
   /* border: 1px solid red; */
-  div.title {
-    padding: 10px;
-    background: #7096bd;
-    color: #f8eeee;
-    border-bottom: 1px solid #d0dded;
-    P {
-      text-align: center;
-    }
-  }
   form {
     margin-left: 10px;
     ul>li{
